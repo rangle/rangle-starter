@@ -1,13 +1,12 @@
 #!/bin/bash
 
-#sh project-name github-user stack
-srcRepoUrl=$1
-destRepoUrl=$2
-yourGithubName=$3
+techStack=$1
+yourGithubName=$2
+destRepoUrl=$3
 
-if [ -z $srcRepoUrl ] || [ -z $destRepoUrl ] || [ -z $yourGithubName ]
+if [ -z $techStack ] || [ -z $destRepoUrl ] || [ -z $yourGithubName ]
 then
-  echo "usage: $0 srcRepoUrl destRepoUrl yourGithubName"
+  echo "usage: $0 techStack yourGithubName destRepoUrl"
   exit -1
 fi
 
@@ -22,7 +21,7 @@ else
     exit -2
 fi
 
-git clone srcRepoUrl --depth=1 -o $yourGithubName $folder
+git clone git@github.com:rangle/$techStack --depth=1 -o $yourGithubName $folder
 cd $folder
 rm -rf .git
 git init

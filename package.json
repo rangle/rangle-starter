@@ -1,13 +1,11 @@
 {
-  "name": "repocopy",
+  "name": "rangle-starter",
   "version": "0.0.1",
-  "description": "Copies a github repo, removes history, and sets up remotes for pushing to a new repo. Intended to be used with Rangle.io's starter projects.",
-  "main": "index.js",
-  "scripts": {
-    "test": ""
-  },
+  "description": "A command-line utility to create a repo based on one of Rangle.io's standard tech stacks.",
+  "repository": "https://github.com/rangle/rangle-starter",
+  "preferGlobal": true,
   "bin": {
-    "repocopy": "./repocopy.sh"
+    "rangle-starter": "bash ./repocopy.sh"
   },
   "author": "rangle.io",
   "license": "MIT"
