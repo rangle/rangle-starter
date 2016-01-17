@@ -1,0 +1,14 @@
+{
+  "name": "repocopy",
+  "version": "0.0.1",
+  "description": "Copies a github repo, removes history, and sets up remotes for pushing to a new repo. Intended to be used with Rangle.io's starter projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "bin": {
+    "repocopy": "./repocopy.sh"
+  },
+  "author": "rangle.io",
+  "license": "MIT"
+}
