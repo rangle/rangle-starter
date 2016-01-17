@@ -1,11 +1,11 @@
 {
   "name": "rangle-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A command-line utility to create a repo based on one of Rangle.io's standard tech stacks.",
   "repository": "https://github.com/rangle/rangle-starter",
   "preferGlobal": true,
   "bin": {
-    "rangle-starter": "bash ./repocopy.sh"
+    "rangle-starter": "./repocopy.sh"
   },
   "author": "rangle.io",
   "license": "MIT"
