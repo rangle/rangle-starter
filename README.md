@@ -67,5 +67,5 @@ Therefore the script sets up two remotes:
 `origin`, which points to your personal fork, and `upstream`, which points to
 a team repo which typically belongs your github organization.
 
-If you want to change this, just fiddle with 'git remote' after running the
+If you want to change this, just fiddle with `git remote` after running the
 script.
