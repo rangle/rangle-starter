@@ -42,19 +42,24 @@ Currently supported tech stacks are:
 ### react-redux-starter
 (based on https://github.com/rangle/react-redux-starter)
 
-React, redux, webpack and associated utilities.
+React, redux, babel, webpack and associated utilities.
+
+### typescript-react-redux-starter
+(based on https://github.com/rangle/typescript-react-redux-starter)
+
+React, redux, typescript, webpack and associated utilities.
 
 ### angular2-redux-starter
 
 (based on https://github.com/rangle/angular2-redux-starter)
 
-Angular 2, redux, webpack and associated utilities.
+Angular 2, redux, typescript, webpack and associated utilities.
 
 ### angular-redux-starter
 
 (based on https://github.com/rangle/angular-redux-starter)
 
-Angular 1.x, redux, webpack and associated utilities.
+Angular 1.x, redux, typescript, webpack and associated utilities.
 
 ## A note on Rangle-flow
 
