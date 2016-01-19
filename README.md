@@ -30,7 +30,11 @@ rangle-starter angular2-redux-starter SethDavenport git@github.com:rangle/my-awe
 This will create a new repo locally based on the appropriate tech stack.
 `npm install; npm start` will build and run the sample app for that stack.
 
-Push up your new repo with `git push upstream upstream/master -u`
+Push up your new repo with:
+
+```sh
+git push upstream master -u
+```
 
 Finally, go back to GitHub and fork your new repo to allow you to work using
 Rangle-Flow (see note below).
