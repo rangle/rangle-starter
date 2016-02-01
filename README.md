@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/rangle/rangle-starter.png?label=ready&title=Ready)](https://waffle.io/rangle/rangle-starter)
 # rangle-starter
 
 A command-line utility to create a repo based on one of Rangle.io's standard tech stacks.
