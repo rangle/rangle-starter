@@ -8,5 +8,8 @@
     "rangle-starter": "./repocopy.sh"
   },
   "author": "rangle.io",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && npm publish && git push --tags"
+  }
 }
