@@ -1,15 +1,26 @@
 {
   "name": "rangle-starter",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "A command-line utility to create a repo based on one of Rangle.io's standard tech stacks.",
   "repository": "https://github.com/rangle/rangle-starter",
   "preferGlobal": true,
   "bin": {
-    "rangle-starter": "./repocopy.sh"
+    "rangle-starter": "./repocopy.js"
+  },
+  "engines": {
+    "node": "4.x"
   },
   "author": "rangle.io",
   "license": "MIT",
   "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint .",
     "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && npm publish && git push --tags"
+  },
+  "dependencies": {
+    "rimraf": "^2.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^1.8.0"
   }
 }
