@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-'use strict';
-
 const spawn = require('child_process').spawn;
 const path = require('path');
 const rimraf = require('rimraf').sync;
@@ -23,7 +21,7 @@ function main() {
 
 function usage() {
   if (process.argv.length < 4) {
-    log(`usage: rangle-starter techStack yourGithubName destRepoUrl`);
+    log('usage: rangle-starter techStack yourGithubName destRepoUrl');
     process.exit(-1);
   }
 }
