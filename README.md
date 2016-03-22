@@ -20,13 +20,7 @@ npm install -g rangle-starter
 First, create a repository for your new project on github. Leave it empty for
 now.
 
-Next, run `rangle-starter techStack githubUserName destinationRepoURL`
-
-Example:
-
-```sh
-rangle-starter angular2-redux-starter SethDavenport git@github.com:rangle/my-awesome-project.git
-```
+Next, run `rangle-starter` and answer the questions in order to setup your new project.
 
 This will create a new repo locally based on the appropriate tech stack.
 `npm install; npm start` will build and run the sample app for that stack.
