@@ -5,17 +5,19 @@ const log = require('./log');
 
 module.exports = function execute(config) {
   const gitOrigin = config.useRepo ?
-    buildGitUrl(config.repoOrg, config.repoName) : false;
+    buildGitUrl(config.repoOrg, config.repoName, config.useHttps) : false;
   const gitFork = config.repoForkOrg ?
-    buildGitUrl(config.repoForkOrg, config.repoName) : false;
+    buildGitUrl(config.repoForkOrg, config.repoName, config.useHttps) : false;
 
   clone(config.techStack, gitFork, gitOrigin, config.repoName)
     .catch(log);
 };
 
-function buildGitUrl(orgName, projectName) {
-  return `git@github.org:${orgName}/${projectName}.git`;
-}
+const HTTPS = 'https://github.com/';
+const SSH = 'git@github.com:';
+const buildGitUrl = (orgName, projectName, useHttps) =>
+  `${useHttps ? HTTPS : SSH}${orgName}/${projectName}.git`;
+
 
 function clone(techStack, gitFork, gitOrigin, repoName) {
   // Clone the starter repo for the specified techstack and re-initialize it as
