@@ -34,6 +34,16 @@ const TECH_STACK = {
   ]
 };
 
+const USE_HTTPS = {
+  type: 'list',
+  name: 'useHttps',
+  message: 'Please chose a protocol for connecting to github',
+  choices: [
+    { name: 'ssh: ( git@github.com:yourOrg/yourRepo )', value: false },
+    { name: 'https: ( https://github.com/yourOrg/yourRep )', value: true }
+  ]
+};
+
 const REPO_NAME = {
   validate: validateGitName,
   name: 'repoName',
@@ -47,14 +57,11 @@ const USE_REPO = {
   choices: [ 'Yes', 'No' ]
 };
 
-function askRepoDetails(config) {
-  if (!config.useRepo) {
-    return {};
-  }
-  return inquirer.prompt([REPO_ORG, REPO_FORK_ORG]);
-}
+const askRepoDetails = config => !config.useRepo ?
+  {} : inquirer.prompt([USE_HTTPS, REPO_ORG, REPO_FORK_ORG]);
 
 const REPO_ORG = {
+  validate: validateGitName,
   name: 'repoOrg',
   message: 'Please enter the git account that this project will belong to'
 };
