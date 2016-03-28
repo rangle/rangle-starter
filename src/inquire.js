@@ -53,7 +53,7 @@ const REPO_NAME = {
 const USE_REPO = {
   type: 'confirm',
   name: 'useRepo',
-  message: 'Would you like to setup a Github repo for this project ?',
+  message: 'Would you like to use up a Github repo with this project ?',
   choices: [ 'Yes', 'No' ]
 };
 
@@ -68,7 +68,7 @@ const REPO_ORG = {
 
 const REPO_FORK_ORG = {
   name: 'repoForkOrg',
-  message: `Please enter your git account to create a personal fork
+  message: `Please enter your git account if you'd like to use a personal fork
 ( leave empty to skip ):`
 };
 
