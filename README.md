@@ -48,6 +48,12 @@ React, redux, babel, webpack and associated utilities.
 
 React, redux, typescript, webpack and associated utilities.
 
+### angular2-starter
+
+(based on https://github.com/rangle/angular2-starter)
+
+Angular 2, typescript, webpack and associated utilities.
+
 ### angular2-redux-starter
 
 (based on https://github.com/rangle/angular2-redux-starter)
