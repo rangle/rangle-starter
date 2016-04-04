@@ -28,6 +28,7 @@ const TECH_STACK = {
   message: 'Please choose a tech stack.',
   choices: [
     { name: 'Angular 1/TypeScript/Redux', value: 'angular-redux-starter' },
+    { name: 'Angular 2/TypeScript', value: 'angular2-starter' },
     { name: 'Angular 2/TypeScript/Redux', value: 'angular2-redux-starter' },
     { name: 'React/ES6/Redux', value: 'react-redux-starter' },
     { name: 'React/TypeScript/Redux', value: 'typescript-react-redux-starter' }
