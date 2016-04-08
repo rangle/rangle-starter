@@ -18,7 +18,7 @@
     "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push upstream && npm publish && git push upstream --tags"
   },
   "dependencies": {
-    "inquirer": "^0.12.0",
+    "inquirer": "^1.0.0",
     "inquirer-promise": "0.0.3",
     "rimraf": "^2.5.2"
   },
