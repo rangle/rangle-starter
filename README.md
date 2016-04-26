@@ -43,10 +43,14 @@ Currently supported tech stacks are:
 
 React, redux, babel, webpack and associated utilities.
 
+Demo app: https://react-redux-starter.herokuapp.com
+
 ### typescript-react-redux-starter
 (based on https://github.com/rangle/typescript-react-redux-starter)
 
 React, redux, typescript, webpack and associated utilities.
+
+Demo app: https://typescript-react-redux-starter.herokuapp.com
 
 ### angular2-starter
 
@@ -54,17 +58,24 @@ React, redux, typescript, webpack and associated utilities.
 
 Angular 2, typescript, webpack and associated utilities.
 
+
+Demo app: https://angular2-starter-rangle.herokuapp.com
+
 ### angular2-redux-starter
 
 (based on https://github.com/rangle/angular2-redux-starter)
 
 Angular 2, redux, typescript, webpack and associated utilities.
 
+Demo app: https://angular2-redux-starter.herokuapp.com
+
 ### angular-redux-starter
 
 (based on https://github.com/rangle/angular-redux-starter)
 
 Angular 1.x, redux, typescript, webpack and associated utilities.
+
+Demo app: https://angular-redux-starter.herokuapp.com
 
 ## A note on Rangle-flow
 
