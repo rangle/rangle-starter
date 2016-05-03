@@ -10,6 +10,8 @@ module.exports = function inquire() {
       .then(mergeConfig)
       .then(ask([REPO_NAME]))
       .then(mergeConfig)
+      .then(ask([USE_HTTPS]))
+      .then(mergeConfig)
       .then(ask([USE_REPO]))
       .then(mergeConfig)
       .then(askRepoDetails)
@@ -59,7 +61,7 @@ const USE_REPO = {
 };
 
 const askRepoDetails = config => !config.useRepo ?
-  {} : inquirer.prompt([USE_HTTPS, REPO_ORG, REPO_FORK_ORG]);
+  {} : inquirer.prompt([REPO_ORG, REPO_FORK_ORG]);
 
 const REPO_ORG = {
   validate: validateGitName,

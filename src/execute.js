@@ -1,3 +1,5 @@
+'use strict';
+
 const spawn = require('child_process').spawn;
 const path = require('path');
 const rimraf = require('rimraf').sync;
@@ -9,7 +11,7 @@ module.exports = function execute(config) {
   const gitFork = config.repoForkOrg ?
     buildGitUrl(config.repoForkOrg, config.repoName, config.useHttps) : false;
 
-  clone(config.techStack, gitFork, gitCentral, config.repoName)
+  clone(config.techStack, gitFork, gitCentral, config.repoName, config.useHttps)
     .catch(log);
 };
 
@@ -19,11 +21,11 @@ const buildGitUrl = (orgName, projectName, useHttps) =>
   `${useHttps ? HTTPS : SSH}${orgName}/${projectName}.git`;
 
 
-function clone(techStack, gitFork, gitCentral, repoName) {
+function clone(techStack, gitFork, gitCentral, repoName, useHttps) {
   // Clone the starter repo for the specified techstack and re-initialize it as
   // a new repo with correct remotes.
   const cwd = process.cwd();
-  return git('clone', 'git@github.com:rangle/' + techStack, '--depth=1', repoName)
+  return git('clone', buildGitUrl('rangle', techStack, useHttps), '--depth=1', repoName)
     .then(() => process.chdir(path.join(cwd, repoName)))
     .then(() => rimraf('.git'))
     .then(() => initRepo(techStack, gitFork, gitCentral, repoName));
