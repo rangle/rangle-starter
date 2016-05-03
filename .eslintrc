@@ -3,14 +3,13 @@
     "node": true                     // Node.js global variables and Node.js-specific rules
   },
   "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": module
+    "ecmaVersion": 6
   },
   "rules": {
 /**
  * Strict mode
  */
-    "strict": [2, "safe"],          // http://eslint.org/docs/rules/strict
+    "strict": [2, "global"],          // http://eslint.org/docs/rules/strict
 
 /**
  * ES6
