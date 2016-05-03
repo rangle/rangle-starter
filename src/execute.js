@@ -1,3 +1,5 @@
+'use strict';
+
 const spawn = require('child_process').spawn;
 const path = require('path');
 const rimraf = require('rimraf').sync;
@@ -35,7 +37,7 @@ function initRepo(techStack, gitFork, gitCentral, repoName) {
     return Promise.resolve(null);
   }
 
-  const promise = git('init');
+  let promise = git('init');
 
   if (gitFork) {
     // If you specified both a central repo and a fork, we'll
