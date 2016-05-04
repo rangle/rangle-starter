@@ -1,3 +1,5 @@
+'use strict';
+
 const inquirer = require('inquirer-promise');
 
 module.exports = function inquire() {
