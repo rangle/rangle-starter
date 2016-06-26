@@ -1,6 +1,6 @@
 {
   "name": "rangle-starter",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A command-line utility to create a repo based on one of Rangle.io's standard tech stacks.",
   "repository": "https://github.com/rangle/rangle-starter",
   "preferGlobal": true,
