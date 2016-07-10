@@ -8,7 +8,7 @@
     "rangle-starter": "./index.js"
   },
   "engines": {
-    "node": "4.x"
+    "node": "4"
   },
   "author": "rangle.io",
   "license": "MIT",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
-    "eslint": "^2.5.3",
+    "eslint": "^3.0.1",
     "eslint-plugin-react": "^5.0.1"
   }
 }
