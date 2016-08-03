@@ -1,7 +1,6 @@
-[![Stories in Ready](https://badge.waffle.io/rangle/rangle-starter.png?label=ready&title=Ready)](https://waffle.io/rangle/rangle-starter)
 # rangle-starter
 
-[![Join the chat at https://gitter.im/rangle/rangle-starter](https://badges.gitter.im/rangle/rangle-starter.svg)](https://gitter.im/rangle/rangle-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Stories in Ready](https://badge.waffle.io/rangle/rangle-starter.png?label=ready&title=Ready)](https://waffle.io/rangle/rangle-starter) [![Join the chat at https://gitter.im/rangle/rangle-starter](https://badges.gitter.im/rangle/rangle-starter.svg)](https://gitter.im/rangle/rangle-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A command-line utility to create a repo based on one of Rangle.io's standard tech stacks.
 
