@@ -4,9 +4,10 @@
 
 A command-line utility to create a repo based on one of Rangle.io's standard tech stacks.
 
-These stacks are designed to play nice with Rangle.io's dev ops tools and internal
-workflow. However they are open source and available to the community on an
-unsupported basis as well.
+These stacks are designed to play nice with Rangle.io's dev ops tools and
+internal workflow. However they are open source and available to the community on an unsupported basis as well.
+
+> [Looking for a tech stack that used to be here?](examples.md)
 
 ## Installation
 
@@ -48,35 +49,16 @@ production-level expertise.
 
 These stacks are what we use on our projects to get teams up and running
 quickly, with our latest thinking on tools, technologies, and best
-practices. However they are also provided, free of warrantly, for community
+practices. However they are also provided, free of warranty, for community
 usage under the terms of the MIT license.
 
 Currently, we maintain starters for the following tech stacks:
 
 * [Angular 2 with TypeScript](https://github.com/rangle/angular2-starter)
-[(demo)](https://angular2-starter-rangle.herokuapp.com)
-* [Angular 2 with TypeScript and Redux](https://github.com/rangle/angular2-redux-starter)
-[(demo)](https://angular2-redux-starter.herokuapp.com)
 * [React with ES6 and Redux](https://github.com/rangle/react-redux-starter)
-[(demo)](https://react-redux-starter.herokuapp.com)
 * [React with TypeScript and Redux](https://github.com/rangle/typescript-react-redux-starter)
-[(demo)](https://typescript-react-redux-starter.herokuapp.com)
 * [Angular 1 with TypeScript and Redux](https://github.com/rangle/angular-redux-starter)
-[(demo)](https://angular-redux-starter.herokuapp.com)
 * [API Koa Starter](https://github.com/rangle/api-koa-starter)
-
-### Sample App
-
-Regardless of stack, each starter contains a simple 'sample app' which serves
-as an example of code style and architecture for that specific technology.
-In all cases, the app is essentially the same, however it is implemented
-according to the relevant idiom (Angular 2 vs. React for example).
-
-This example app is intended as a clear example of what we consider to be
-best practices for code layout and architecture in that particular framework.
-
-Most starter project users will delete this app after referring to it
-for initial guidance.
 
 ### Code Architecture
 
@@ -113,7 +95,7 @@ For React, we use 'functional stateless components' to enforce these
 concepts. Most of your components will be pure functions of their props
 which return snippets of JSX.
 
-Each component gets its own scoped CSS using the 
+Each component gets its own scoped CSS using the
 `postss-local-by-default` transformation.
 
 ##### Presentational Components in Angular 2
