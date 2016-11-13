@@ -55,8 +55,7 @@ usage under the terms of the MIT license.
 Currently, we maintain starters for the following tech stacks:
 
 * [Angular 2 with TypeScript](https://github.com/rangle/angular2-starter)
-* [React with ES6 and Redux](https://github.com/rangle/react-redux-starter)
-* [React with TypeScript and Redux](https://github.com/rangle/typescript-react-redux-starter)
+* [React with ES6](https://github.com/rangle/react-starter)
 * [Angular 1 with TypeScript and Redux](https://github.com/rangle/angular-redux-starter)
 * [API Koa Starter](https://github.com/rangle/api-koa-starter)
 
@@ -145,35 +144,6 @@ and prefixed in the small number of cases where basscss is insufficient.
 
 You can learn more about our CSS strategy from our
 [Modular CSS training slides](http://rangle.github.io/intro-to-modular-css/).
-
-#### Redux State Management
-
-If most of your UI code consists of simple, stateless components,
-then where does your application state live?
-
-At Rangle.io, we're big fans of a state-management solution called
-Redux. We started with Flux, but quickly realized that if you're doing it
-correctly it ends up looking like Redux anyway. Plus, Redux boast some
-[first-rate developer tools](https://github.com/zalmoxisus/redux-devtools-extension).
-
-Redux essentially keeps all your data in a single store, and only lets you
-modify it by dispatching 'actions' to pure functions called 'reducers'.
-This model forces you to think of your application as a pure function that
-computes its UI based solely on the current state of your application. The
-application transitions through states by executing a series of actions over
-time.
-
-This means your application 'factors out' the element of time and can be played
-forward or backward, or re-hydrated to any possible state simply by providing
-the right script of actions as a collection.
-
-For more information about this popular archicture, we highly recommend the
-[video series from Egghead.io](https://egghead.io/courses/getting-started-with-redux).
-
-The React starters use Redux with the official React-Redux language bindings.
-
-The Angular starters use [Ng2-Redux](https://www.npmjs.com/package/ng2-redux),
-which provides RxJS Observable-based bindings instead.
 
 ### Developer Experience
 
