@@ -55,9 +55,25 @@ usage under the terms of the MIT license.
 Currently, we maintain starters for the following tech stacks:
 
 * [Angular 2 with TypeScript](https://github.com/rangle/angular2-starter)
-* [React with ES6](https://github.com/rangle/react-starter)
 * [Angular 1 with TypeScript and Redux](https://github.com/rangle/angular-redux-starter)
 * [API Koa Starter](https://github.com/rangle/api-koa-starter)
+
+### React Starter
+
+We transitioned to Facebook's Create-React-App project for building our react app starters.
+
+* [Facebook's create-react-app](https://github.com/facebookincubator/create-react-app)
+* [Rangle's react-scripts](https://www.npmjs.com/package/@rangle/react-scripts)
+
+To build a react starter project use the following commands:
+
+```
+// Install
+$ npm install create-react-app -g
+
+// Use our @rangle/scripts with create-react-app to generate react/redux app
+$ create-react-app my-starter-app --scripts-version @rangle/react-scripts
+```
 
 ### Code Architecture
 

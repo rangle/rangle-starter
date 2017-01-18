@@ -33,7 +33,6 @@ const TECH_STACK = {
   choices: [
     { name: 'Angular 1/TypeScript/Redux', value: 'angular-redux-starter' },
     { name: 'Angular 2/TypeScript', value: 'angular2-starter' },
-    { name: 'React/ES6', value: 'react-starter' },
     { name: 'API/ES6/Koa', value: 'api-koa-starter' }
   ]
 };
