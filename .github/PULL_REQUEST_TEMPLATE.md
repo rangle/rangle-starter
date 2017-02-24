@@ -1,10 +1,13 @@
 ## Pull request
 
-_Before submitting a pull request please make sure you have:_
-- [ ] Rebased from your `upstream/master`
-- [ ] Run all tests and they pass
-- [ ] There are no breaking changes
+_**Before submitting a pull request please make sure you have:**_
 
-_Add brief description of changes this PR introduces:_
+- [ ] Rebased from `upstream/master`
+- [ ] Updated documentation for changed API's, development workflow, or aspects of the architecture
+- [ ] Added tests for all new code
+- [ ] Code passes **all** tests and linters
 
-_If applicable, please add screenshots of updated ui:_
+
+_**Add brief description of changes this PR introduces**_
+
+_**If applicable, please add screenshots with descriptions of updated ui**_
