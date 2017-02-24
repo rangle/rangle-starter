@@ -4,7 +4,7 @@ _**I would like to:**_
 - [ ] Report a bug
 - [ ] Request a feature
 
-_**What is the current behavior? **(If this is a bug please include steps to reproduce)_
+_**What is the current behavior?** (If you are reporting a bug please include steps to reproduce)_
 
 
 _**What is the expected behavior?**_
