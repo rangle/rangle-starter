@@ -1,16 +1,12 @@
 # Contributing
 
-Whether you plan on opening a bug report, requesting a feature, or submitting a pull request: we thank you for your interest in contributing to our project.
+Whether you plan on opening a bug report, requesting a feature, or submitting a pull request: we want to thank you for your interest in contributing. Everything in this document is meant to provide you with as much insight as possible with regards to our contribution standards. As you read it, it is important to remember that these are just **guidelines** and not rules. Please use your best judgement when applying them.
 
-## Issues
+## I'm new, anything I should know?
 
-Issues can be used to request a feature or open a bug report.
+Hello and welcome! The first thing you should do is check out the `README.md`. This will give you all the information you need to know for this project including setting up and running the project on your machine.
 
-### Request a feature
-
-### Report a Bug
-
-## Pull Requests
+## Contributing Workflow
 At Rangle.io we use a fork-and-branch strategy for pull requests, with some modifications for our internal tooling. To follow this strategy, please do the following:
 
 ### Setup
@@ -69,7 +65,7 @@ Concise first line with more details below
 ```
 Handle exception due to missing local storage instance
 
-Accessing localstorage throws an error in private mode.
+Accessing local storage throws an error in private mode.
 Added an in-memory workaround for this case.
 ```
 
