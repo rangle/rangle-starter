@@ -15,16 +15,20 @@
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint .",
-    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push upstream && npm publish && git push upstream --tags"
+    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push upstream && npm publish && git push upstream --tags",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "inquirer": "^1.0.0",
     "inquirer-promise": "0.0.3",
-    "rimraf": "^2.5.2"
+    "rimraf": "^2.5.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
     "eslint": "^3.0.1",
     "eslint-plugin-react": "^6.0.0"
-  }
+  },
+  "snyk": true
 }
